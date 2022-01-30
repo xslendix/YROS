@@ -35,6 +35,8 @@ gpu_mem_1024=128
 # Enable the onboard soundcard
 dtparam=audio=on
 
+boot_delay=0
+
 # Disable rainbow color splash
 disable_splash=1
 
