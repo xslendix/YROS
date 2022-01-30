@@ -1,0 +1,15 @@
+[Unit]
+Description=YROS System Service
+After=network.target
+After=sysinit.service
+
+[Service]
+Type=simple
+ExecStart=/bin/yrosd
+ExecReload=/bin/yrosd -r
+ExecStop=/bin/yrosd -s
+TimeoutStopSec=5
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
