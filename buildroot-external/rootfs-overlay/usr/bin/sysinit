@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Turn off green LED
+# This will allow it to be used for other more useful purposes.
+echo none > /sys/class/leds/led0/trigger
+# Now GPIO 16 can be used.
+
+echo Done!

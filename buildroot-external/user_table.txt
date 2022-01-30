@@ -1,0 +1,2 @@
+
+yros -1 yros -1 =yros /home/yros /bin/bash input,i2c,spi,gpio,audio,video,pulse,pulse-access,lp,weston-launch YROS user

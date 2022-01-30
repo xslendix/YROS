@@ -1,0 +1,12 @@
+[Unit]
+Description=System Initialization Script
+After=syslog.target
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/sysinit
+
+[Install]
+WantedBy=multi-user.target
