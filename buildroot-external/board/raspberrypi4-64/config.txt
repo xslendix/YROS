@@ -1,1 +1,1 @@
-../raspberrypi/config.txt
+../raspberrypi/config_4.txt
