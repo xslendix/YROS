@@ -25,7 +25,11 @@ BOARD_DIR="$(dirname $0)"
 } > "${TARGET_DIR}/etc/machine-info"
 
 cp -vf ../buildroot-external/board/raspberrypi/config.txt ${BINARIES_DIR}/rpi-firmware/config.txt
-cp -vf ../buildroot-external/board/raspberrypi/cmdline.txt ${BINARIES_DIR}/rpi-firmware/cmdline.txt 
+cp -vf ../buildroot-external/board/raspberrypi/cmdline.txt ${BINARIES_DIR}/rpi-firmware/cmdline.txt
+
+rm -f "${TARGET_DIR}/usr/lib/systemd/system/pigpio.service"
+
+vim "${TARGET_DIR}/etc/yrosd.conf"
 
 # cp package/busybox/S10mdev ${TARGET_DIR}/etc/init.d/S10mdev
 # chmod 755 ${TARGET_DIR}/etc/init.d/S10mdev

@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-YROSD_VERSION = ef7327d806db5ded7c618b1de01e923161adfe22
+YROSD_VERSION = 3dd2e72760f126caa51cbc98f1212a733621f719
 YROSD_SITE = https://github.com/xslendix/yrosd.git
 YROSD_SITE_METHOD = git
 
