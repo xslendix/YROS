@@ -4,13 +4,4 @@ This project utilizes [Buildroot](https://buildroot.org/) to create a fast, port
 
 ## Building
 
-```
-make rpi3_64-gui
-# OR
-make rpi4_64-gui
-```
-
-## Known bugs
-
- * rpi4 build includes the rpi3 config.txt file. The file needs to be manually replaced after each flashed.
-
+For build instructions please check out [BUILDING.md](/BUILDING.md).
